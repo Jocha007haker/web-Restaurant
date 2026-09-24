@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Baristas — Café & Restaurante. Experiencia gourmet desde 1998. Reserva tu mesa hoy." />
+  <title>Baristas — Café & Restaurante Premium</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Baristas</span>
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#inicio" class="nav__link active">Inicio</a></li>
+        <li><a href="#menu" class="nav__link">Menú</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#blog" class="nav__link">Blog</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#reserva" class="btn btn--primary">Reservar mesa</a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <span class="hero__tag">✦ Desde 1998</span>
+      <h1 class="hero__title">Una experiencia<br /><em>única</em> en cada sorbo</h1>
+      <p class="hero__subtitle">Café de origen único, platillos gourmet y el ambiente perfecto para cada momento.</p>
+      <div class="hero__cta">
+        <a href="#menu" class="btn btn--primary btn--lg">Ver nuestro menú</a>
+        <a href="#nosotros" class="btn btn--ghost btn--lg">Conocer más</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ── FEATURES BAR ───────────────────────────────────────── -->
+  <section class="features">
+    <div class="container features__grid">
+      <div class="feature">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+          <strong>100% Orgánico</strong>
+          <p>Ingredientes naturales certificados</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <strong>Entrega a domicilio</strong>
+          <p>En menos de 30 minutos</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <strong>Premio al mejor café</strong>
+          <p>Reconocido 5 años consecutivos</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-headset"></i>
+        <div>
+          <strong>Reservas 24/7</strong>
+          <p>Atención personalizada siempre</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MENÚ ───────────────────────────────────────────────── -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Nuestro Menú</span>
+        <h2 class="section__title">Sabores que <em>enamoran</em></h2>
+        <p class="section__subtitle">Cada preparación es una obra de arte. Seleccionamos los mejores granos del mundo.</p>
+      </div>
+
+      <div class="menu__tabs">
+        <button class="menu__tab active" data-tab="destacados">Destacados</button>
+        <button class="menu__tab" data-tab="caliente">Café Caliente</button>
+        <button class="menu__tab" data-tab="frio">Café Frío</button>
+        <button class="menu__tab" data-tab="especiales">Especiales</button>
+      </div>
+
+      <div class="menu__grid" id="menu-grid">
+        <!-- Destacados -->
+        <div class="menu-card" data-category="destacados caliente">
+          <div class="menu-card__img">
+            <img src="img/cafe-irish.jpg" alt="Café Irish" loading="lazy" />
+            <span class="menu-card__badge">-13%</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(124)</span>
+            </div>
+            <h3>Café Irish</h3>
+            <p>Whisky irlandés, café espresso doble y crema batida. La combinación perfecta.</p>
+            <div class="menu-card__footer">
+              <div class="menu-card__price">
+                <span class="price--current">$4.60</span>
+                <span class="price--old">$5.30</span>
+              </div>
+              <button class="btn btn--icon" aria-label="Agregar al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="destacados caliente">
+          <div class="menu-card__img">
+            <img src="img/cafe-ingles.jpg" alt="Café Inglés" loading="lazy" />
+            <span class="menu-card__badge">-22%</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(98)</span>
+            </div>
+            <h3>Café Inglés</h3>
+            <p>Earl Grey, leche vaporizada y espresso. Un clásico elegante y sofisticado.</p>
+            <div class="menu-card__footer">
+              <div class="menu-card__price">
+                <span class="price--current">$5.70</span>
+                <span class="price--old">$7.30</span>
+              </div>
+              <button class="btn btn--icon" aria-label="Agregar al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="destacados frio">
+          <div class="menu-card__img">
+            <img src="img/cafe-australiano.jpg" alt="Café Australiano" loading="lazy" />
+            <span class="menu-card__badge menu-card__badge--new">Nuevo</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(256)</span>
+            </div>
+            <h3>Café Australiano</h3>
+            <p>Flat white australiano con leche de avena y espresso de origen único.</p>
+            <div class="menu-card__footer">
+              <div class="menu-card__price">
+                <span class="price--current">$3.20</span>
+              </div>
+              <button class="btn btn--icon" aria-label="Agregar al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="destacados frio">
+          <div class="menu-card__img">
+            <img src="img/cafe-helado.jpg" alt="Café Helado" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(187)</span>
+            </div>
+            <h3>Café Helado</h3>
+            <p>Espresso sobre hielo con leche condensada. Refrescante y energizante.</p>
+            <div class="menu-card__footer">
+              <div class="menu-card__price">
+                <span class="price--current">$5.60</span>
+              </div>
+              <button class="btn btn--icon" aria-label="Agregar al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="especiales caliente">
+          <div class="menu-card__img">
+            <img src="img/cafe-viena.jpg" alt="Café Viena" loading="lazy" />
+            <span class="menu-card__badge">-30%</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(312)</span>
+            </div>
+            <h3>Café Viena</h3>
+            <p>Doble espresso cubierto con nata montada. La receta clásica vienesa.</p>
+            <div class="menu-card__footer">
+              <div class="menu-card__price">
+                <span class="price--current">$3.85</span>
+                <span class="price--old">$5.50</span>
+              </div>
+              <button class="btn btn--icon" aria-label="Agregar al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="especiales caliente">
+          <div class="menu-card__img">
+            <img src="img/cafe-liqueurs.jpg" alt="Café Liqueurs" loading="lazy" />
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(143)</span>
+            </div>
+            <h3>Café Liqueurs</h3>
+            <p>Espresso con licor de café Kahlúa y espuma de leche. Para los más atrevidos.</p>
+            <div class="menu-card__footer">
+              <div class="menu-card__price">
+                <span class="price--current">$5.60</span>
+              </div>
+              <button class="btn btn--icon" aria-label="Agregar al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__cta">
+        <a href="#" class="btn btn--outline">Ver menú completo <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────── -->
+  <section class="section about" id="nosotros">
+    <div class="container about__grid">
+      <div class="about__imgs">
+        <img src="img/gallery1.jpg" alt="Interior del café" class="about__img about__img--main" />
+        <img src="img/gallery2.jpg" alt="Barista preparando café" class="about__img about__img--accent" />
+        <div class="about__badge">
+          <span class="about__badge-number">25+</span>
+          <span class="about__badge-text">Años de experiencia</span>
+        </div>
+      </div>
+      <div class="about__content">
+        <span class="section__tag">Nuestra historia</span>
+        <h2 class="section__title">Pasión por el café <em>desde siempre</em></h2>
+        <p>Desde 1998 hemos servido el mejor café de la ciudad. Comenzamos como una pequeña cafetería familiar y hoy somos el referente de la cultura cafetera en la región.</p>
+        <p>Cada grano es seleccionado directamente de fincas certificadas en Colombia, Etiopía y Guatemala. Nuestros baristas son campeones nacionales entrenados para extraer la perfección en cada taza.</p>
+        <ul class="about__list">
+          <li><i class="fa-solid fa-check"></i> Granos de origen único certificados</li>
+          <li><i class="fa-solid fa-check"></i> Baristas campeones nacionales</li>
+          <li><i class="fa-solid fa-check"></i> Ambiente acogedor y familiar</li>
+          <li><i class="fa-solid fa-check"></i> Menú estacional con ingredientes locales</li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ────────────────────────────────────────────── -->
+  <section class="section galeria" id="galeria">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Galería</span>
+        <h2 class="section__title">Un vistazo a <em>nuestra casa</em></h2>
+      </div>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall">
+        <img src="img/gallery1.jpg" alt="Galería 1" loading="lazy" />
+        <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery2.jpg" alt="Galería 2" loading="lazy" />
+        <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery3.jpg" alt="Galería 3" loading="lazy" />
+        <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="img/gallery4.jpg" alt="Galería 4" loading="lazy" />
+        <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery__item">
+        <img src="img/gallery5.jpg" alt="Galería 5" loading="lazy" />
+        <div class="gallery__overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESERVA ────────────────────────────────────────────── -->
+  <section class="section reserva" id="reserva">
+    <div class="reserva__bg"></div>
+    <div class="container reserva__grid">
+      <div class="reserva__content">
+        <span class="section__tag section__tag--light">Reservaciones</span>
+        <h2 class="section__title section__title--light">Reserva tu mesa <em>hoy mismo</em></h2>
+        <p>Garantiza tu lugar en el mejor café de la ciudad. Grupos, eventos privados y celebraciones especiales.</p>
+        <div class="reserva__info">
+          <div><i class="fa-regular fa-clock"></i> Lun–Vie: 7am – 10pm</div>
+          <div><i class="fa-regular fa-clock"></i> Sáb–Dom: 8am – 11pm</div>
+          <div><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</div>
+        </div>
+      </div>
+      <form class="reserva__form" id="reserva-form">
+        <div class="form__group">
+          <input type="text" placeholder="Tu nombre completo" required />
+          <input type="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="form__group">
+          <input type="tel" placeholder="Teléfono" />
+          <input type="number" min="1" max="20" placeholder="Número de personas" required />
+        </div>
+        <div class="form__group">
+          <input type="date" required />
+          <input type="time" required />
+        </div>
+        <textarea placeholder="Peticiones especiales, alergias, ocasión especial..." rows="3"></textarea>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">
+          Confirmar reserva <i class="fa-solid fa-calendar-check"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── BLOG ───────────────────────────────────────────────── -->
+  <section class="section blog" id="blog">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Blog</span>
+        <h2 class="section__title">El mundo del <em>café</em></h2>
+        <p class="section__subtitle">Historias, recetas y curiosidades del universo cafetero.</p>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__img">
+            <img src="img/blog-1.jpg" alt="El arte del espresso" loading="lazy" />
+            <span class="blog-card__category">Técnica</span>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date"><i class="fa-regular fa-calendar"></i> 10 Sep 2026</span>
+            <h3>El arte de preparar el espresso perfecto</h3>
+            <p>Descubre los secretos detrás de cada taza. Desde la molienda hasta la extracción, cada detalle importa para conseguir el espresso ideal.</p>
+            <a href="#" class="blog-card__link">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img">
+            <img src="img/blog-2.jpg" alt="Orígenes del café" loading="lazy" />
+            <span class="blog-card__category">Origen</span>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date"><i class="fa-regular fa-calendar"></i> 14 Sep 2026</span>
+            <h3>Viaje a los orígenes: café de Etiopía</h3>
+            <p>Etiopía, la cuna del café. Te llevamos en un recorrido por las fincas donde nacen los granos más especiales que sirven en nuestra cafetería.</p>
+            <a href="#" class="blog-card__link">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__img">
+            <img src="img/blog-3.jpg" alt="Latte art" loading="lazy" />
+            <span class="blog-card__category">Arte</span>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date"><i class="fa-regular fa-calendar"></i> 15 Sep 2026</span>
+            <h3>Latte art: cuando el café se convierte en lienzo</h3>
+            <p>Nuestros baristas han ganado competencias internacionales de latte art. Conoce las técnicas y la dedicación que hay detrás de cada diseño.</p>
+            <a href="#" class="blog-card__link">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ───────────────────────────────────────── -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Testimonios</span>
+        <h2 class="section__title">Lo que dicen <em>nuestros clientes</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"El mejor café que he tomado en mi vida. El ambiente es increíble y el servicio es de primera. Ya es mi lugar favorito para trabajar por las mañanas."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MR</div>
+            <div>
+              <strong>María Rodríguez</strong>
+              <span>Cliente frecuente</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Organizamos el cumpleaños de mi esposa aquí y fue perfecto. El equipo fue muy atento y la comida estaba deliciosa. 100% recomendado para eventos."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background:#10b981;">CL</div>
+            <div>
+              <strong>Carlos López</strong>
+              <span>Evento privado</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>"El cappuccino de Baristas es adictivo. Cada mañana paso a recoger el mío antes del trabajo. La consistencia y calidad nunca falla."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background:#f59e0b;">AG</div>
+            <div>
+              <strong>Ana García</strong>
+              <span>Cliente VIP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────── -->
+  <section class="section contacto" id="contacto">
+    <div class="container contacto__grid">
+      <div class="contacto__info">
+        <span class="section__tag">Contacto</span>
+        <h2 class="section__title">Visítanos o <em>escríbenos</em></h2>
+        <div class="contacto__items">
+          <div class="contacto__item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Dirección</strong>
+              <p>71 Pennington Lane, Vernon Rockville, CT 06066</p>
+            </div>
+          </div>
+          <div class="contacto__item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contacto__item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>hola@baristas.café</p>
+            </div>
+          </div>
+          <div class="contacto__item">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <strong>Horario</strong>
+              <p>Lun–Vie 7am–10pm · Sáb–Dom 8am–11pm</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacto__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <form class="contacto__form">
+        <div class="form__row">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Email" required />
+        </div>
+        <input type="text" placeholder="Asunto" />
+        <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+        <button type="submit" class="btn btn--primary btn--lg">
+          Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>Baristas</span>
+        </a>
+        <p>Café de especialidad y gastronomía de autor desde 1998. Cada taza cuenta una historia.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Franquicias</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__newsletter">
+        <h4>Newsletter</h4>
+        <p>Recibe recetas, ofertas y novedades exclusivas.</p>
+        <form class="newsletter__form">
+          <input type="email" placeholder="tu@email.com" required />
+          <button type="submit" class="btn btn--primary">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        <img src="img/payment.png" alt="Métodos de pago" class="footer__payments" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Baristas Café & Restaurante. Todos los derechos reservados.</p>
+        <p>Diseño profesional — Disponible para personalización empresarial</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    const header = document.getElementById('header')
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 50)
+    })
+
+    // Mobile menu
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      document.getElementById('nav-menu').classList.toggle('nav__menu--open')
+    })
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]')
+    const navLinks = document.querySelectorAll('.nav__link')
+    window.addEventListener('scroll', () => {
+      let current = ''
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.getAttribute('id')
+      })
+      navLinks.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + current)
+      })
+    })
+
+    // Menu tabs
+    document.querySelectorAll('.menu__tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.menu__tab').forEach(t => t.classList.remove('active'))
+        tab.classList.add('active')
+        const cat = tab.dataset.tab
+        document.querySelectorAll('.menu-card').forEach(card => {
+          card.style.display = card.dataset.category.includes(cat) ? 'flex' : 'none'
+        })
+      })
+    })
+
+    // Reservation form
+    document.getElementById('reserva-form').addEventListener('submit', e => {
+      e.preventDefault()
+      e.target.innerHTML = '<div class="form__success"><i class="fa-solid fa-circle-check"></i><h3>¡Reserva confirmada!</h3><p>Te contactaremos en menos de 2 horas para confirmar tu mesa.</p></div>'
+    })
+  </script>
+</body>
+</html>
